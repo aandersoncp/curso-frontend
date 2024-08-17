@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="register.py" method="GET">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name">
+
+            <input type="" name="name">
+        </div>
+        <div>
+            <label for="age">Idade</label>
+            <input type="text" name="age">
+        </div>
+
+        <div>
+            <label for="jobs">Profissões</label>
+            <select name="jobs" id="">
+                <option value=""></option>
+                <option value="programador">Programador</option>
+                <option value="tester">QA/Tester</option>
+                <option value="devops">DevOps</option>
+                <option value="ux">UX</option>
+            </select>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações: </legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="list">Sabores de sorvete: </label>
+            <input type="text" name="list" list="sabores">
+            <datalist id="sabores">
+                <option value=""></option>
+                <option value="Brigadeiro"></option>
+                <option value="Castanha"></option>
+                <option value="Napolitano"></option>
+                <option value="Flocos"></option>
+            </datalist>
+        </div>
+
+        <input type="submit" name="Enviar" id="enviar">
+    </form>
+</body>
+</html>

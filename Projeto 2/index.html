@@ -1,0 +1,85 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h3>Cadastre seu veículo para vender mais rápido!</h3>
+    </div>
+    <div>
+        <h2>FORMULÁRIO</h2>
+        <form action="texte.py">
+            <div>
+                <h3>Venda fácil seu carro!</h3>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+                <div>
+                    <label class="label" for="title">Título do anúncio: <span class="required-field">*</span></label>
+                    <input class="block" type="text" name="title" placeholder="Um título para anunciar seu carro">
+                </div>
+                <div>
+                    <label class="label" for="price">Preço: <span class="required-field">*</span></label>
+                    <input class="block" type="number" name="price" placeholder="Defina o preço">
+                </div>
+                <div>
+                    <label class="label" for="description">Descrição: <span class="required-field">*</span></label>
+                    <textarea class="block" name="description" placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão"></textarea>
+                </div>
+                <div>
+                    <label class="label" for="brand">Marca: <span class="required-field">*</span></label>
+                    TODO
+                </div>
+                <div>
+                    <label class="label" for="model">Modelo: <span class="required-field">*</span></label>
+                    TODO
+                </div>
+                <div>
+                    <label class="label" for="mileage">Quilometragem: <span class="required-field">*</span></label>
+                    <input class="block" type="number" name="mileage" placeholder="Digite a quilometragem do veículo">
+                </div>
+                <div>
+                    <label class="label" for="date"> Data de compra: <span class="required-field">*</span></label>
+                    <input class="block" type="date" name="date">
+                </div>
+                <div>
+                    <label class="label" for="cambio">Tipo de câmbio: <span class="required-field">*</span></label>
+                    <div class="itens">
+                        <input type="radio" value="manual" name="manual">
+                        <label for="manual">Manual</label>
+                    </div>
+                    <div class="itens">     
+                        <input type="radio" value="automatico" name="automatico">
+                        <label for="automatico">Automático</label>
+                    </div>
+                </div>
+                <div  class="itens">
+                    <label class="label" for="cambio">Opcionais: </label>
+                    <input type="checkbox">
+                    <label for="">Airbag</label>
+                    <input type="checkbox">
+                    <label for="">Alarme</label>
+                    <input type="checkbox">
+                    <label for="">Ar Condicionado</label>
+                    <input type="checkbox">
+                    <label for="">Câmera de Ré</label>
+                    <input type="checkbox">
+                    <label for="">Assistente de Pista</label>
+                    <input type="checkbox">
+                    <label for="">Partida Keyless</label>
+                    <input type="checkbox">
+                    <label for="">Integração com Celular</label>
+                    <input type="checkbox">
+                    <label for="">Banco de Couro</label>
+                </div>
+                <div>
+                    <label class="label" for="images">Fotos do veículo: *</label>
+                    <input type="file">
+                </div>
+                <input type="submit" name="enviar" value="CADASTRAR" class="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
